@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <ImageView
+            android:id="@+id/grd1box"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/gradient1"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="@string/todo" />
+
+
+        <ImageView
+            android:id="@+id/grd2box"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grd1box"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/gradient2"
+            tools:ignore="MissingConstraints,RtlHardcoded"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/wshadowbox"
+            android:layout_width="327dp"
+            android:layout_height="360dp"
+            android:background="@drawable/white1"
+            android:elevation="20dp"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="TODO" />
+
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/Rlogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/rustlogo_foreground">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Rust Tutorial Application"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

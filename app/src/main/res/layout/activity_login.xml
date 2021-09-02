@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="LogIn"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        android:textStyle="italic|bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/grd1box"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient1"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:weightSum="5">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/wshadowbox"
+            android:layout_width="327dp"
+            android:layout_height="380dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/white1"
+            android:elevation="20dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="420dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:padding="4dp">
+            <!--User name-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/Email"
+                app:boxCornerRadiusBottomEnd="23dp"
+                app:boxCornerRadiusTopStart="23dp"
+                app:helperText="Please Enter Your Email"
+                app:startIconDrawable="@drawable/ic_baseline_alternate_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--password-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Email"
+                android:layout_marginTop="6dp"
+                android:hint="@string/Password"
+                app:boxCornerRadiusBottomEnd="23dp"
+                app:boxCornerRadiusTopStart="23dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:helperText="Enter Your Password"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/ic_baseline_vpn_key">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/twobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Password"
+                android:orientation="horizontal">
+
+
+                <!--floating action btn login-->
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/loginbtn"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/LogIn"
+                    android:textColor="@color/white" />
+                <!--Take this icon to left-->
+                <!--  </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+                <!--floating action Guest btn-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+                    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:id="@+id/guestbtn"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        android:text="@string/Guest"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/twobtn"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <!--forget password-->
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/forgotpass"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/forgotpass"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/forgotpass"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!--or -->
+                    <TextView
+                        android:id="@+id/or"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:text="@string/OR"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="23sp" />
+                    <!--create new account-->
+                    <Button
+                        android:id="@+id/createnewacc"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Create_new_account"
+                        android:textColor="@color/teal_200"
+                        app:strokeColor="@color/teal_200"
+                        app:strokeWidth="1dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

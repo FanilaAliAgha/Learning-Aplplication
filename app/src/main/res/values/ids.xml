@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ch10" type="id"/>
+    <item name="ch9" type="id"/>
+    <item name="ch8" type="id"/>
+    <item name="ch7" type="id"/>
+    <item name="ch6" type="id"/>
+    <item name="ch5" type="id"/>
+    <item name="ch1" type="id"/>
+    <item name="ch2" type="id"/>
+    <item name="ch3" type="id"/>
+    <item name="ch4" type="id"/>
+    <item name="ucodebtn1" type="id"/>
+    <item name="code_of_file" type="id"/>
+    <item name="name_of_file" type="id"/>
+    <item name="ucard1" type="id"/>
+    <item name="Users_Name" type="id"/>
+</resources>

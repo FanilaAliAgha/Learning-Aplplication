@@ -1,0 +1,158 @@
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backcolor">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/quiz"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:text="@string/ch_1_introduction_to_rust"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:text="@string/ch_2_programming_a_game"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:text="@string/ch_3_common_concepts"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:text="@string/ch_4_understanding_ownership"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:text="@string/ch_5_using_structs_to_structures"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:text="@string/ch_6_enums_pattern_matching"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/ch_7_packages_crates_modules"
+            android:textColor="@color/white"
+            android:contextClickable="true"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/ch_8_common_collections"
+            android:textColor="@color/white"
+            android:contextClickable="true"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/ch_9_error_handling"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:contextClickable="true"
+            android:fontFamily="serif"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ch10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:text="@string/ch_10_generic_traits_lifetimes"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

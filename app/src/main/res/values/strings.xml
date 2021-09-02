@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Rust Tutorial Application</string>
+
+    <!--login-->
+    <string name="Create_new_account">Create New Account</string>
+    <string name="OR">OR</string>
+    <string name="forgotpass">Forgot Password</string>
+    <string name="Guest">Guest</string>
+    <string name="LogIn">Log In</string>
+    <string name="Password">Password</string>
+    <string name="UserName">User Name</string>
+    <string name="login">Log In</string>
+
+    <!--signup-->
+    <string name="sign_upform">Sign up form</string>
+    <string name="sign_up">signup</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="Email">Email</string>
+    <string name="name">Name</string>
+
+    <!--forgotpass-->
+
+    <string name="forgot_password">Forgot Password</string>
+    <string name="OldPass">Old Password</string>
+    <string name="PhoneNo">Phone Number</string>
+    <string name="NewPass">New Password</string>
+    <string name="Reset_Pass">Reset Password</string>
+    <!--uploads-->
+    <string name="title">Title</string>
+    <string name="secondary_text">Secondary Text or the helper text</string>
+    <string name="code">Code</string>
+
+    <!--Enterpincode-->
+
+
+    <string name="Enter_Pin_Code">Enter Pin Code</string>
+    <string name="Vtext">Please Verify</string>
+    <string name="Plese_veriy">Please Type the Verification Code Sent to +xxxxxxxxxxx</string>
+    <string name="number">3</string>
+    <string name="number_1">5</string>
+    <string name="number3">7</string>
+    <string name="number4">9</string>
+    <string name="Verify">Verify</string>
+    <string name="enter_pin_code">Enter_Pin_Code</string>
+    <string name="verify">Verify</string>
+
+
+    <!--Attemptquiz-->
+
+    <string name="ch_7_packages_crates_modules">Ch 7: Packages, Crates, Modules</string>
+    <string name="ch_6_enums_pattern_matching">Ch 6: Enums, Pattern Matching</string>
+    <string name="ch_4_understanding_ownership">Ch 4: Understanding Ownership</string>
+    <string name="ch_3_common_concepts">Ch 3: Common Concepts</string>
+    <string name="ch_2_programming_a_game">Ch 2: Programming a Game</string>
+    <string name="ch_5_using_structs_to_structures">Ch 5: Using Structs to Structures</string>
+    <string name="ch_10_generic_traits_lifetimes">Ch 10: Generic, Traits, Lifetimes</string>
+    <string name="ch_9_error_handling">Ch 9: Error Handling</string>
+    <string name="ch_8_common_collections">Ch 8: Common Collections</string>
+    <string name="ch_1_introduction_to_rust">Ch 1: Introduction to Rust</string>
+    <string name="quiz">Quiz</string>
+
+
+    <!--Ch2Q-->
+    <string name="chapter2_programming_a_game">Chapter2: Programming a Game</string>
+    <string name="_1_to_set_up_a_new_project_which_command_is_used">1. To set up a new project,which command is used:</string>
+    <string name="cd_new_file_name">CD New File_name</string>
+    <string name="_2_which_file_contain_dependencies">2. Which file contain dependencies</string>
+    <string name="cargo_toml_file">Cargo.toml file</string>
+    <string name="cargo_build_file">cargo build file</string>
+    <string name="_3_this_command_is_used_to_run_the_code">3.This command is used to run the code:</string>
+    <string name="cargo_new_file_name">cargo new file_name</string>
+    <string name="Cargo_Run">Cargo Run</string>
+    <string name="cargo_run">cargo run</string>
+    <string name="next_2">Next</string>
+
+
+    <!--Book-->
+
+
+    <string name="naviagtion_drawer_open">open navigation drawerc</string>
+    <string name="naviagtion_drawer_close">naviagtion drawer close</string>
+    <string name="uploads">Upload</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+
+</resources>

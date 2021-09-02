@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/signuptxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="Signup"
+        android:textColor="@color/black"
+        android:textSize="55sp"
+        android:textStyle="italic|bold"
+        tools:ignore="DuplicateIds" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/grd1box"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient1"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:weightSum="5">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/wshadowbox"
+            android:layout_width="327dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/white1"
+            android:elevation="20dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="420dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:padding="4dp">
+            <!--User name-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Namebox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Name"
+                app:boxCornerRadiusBottomEnd="23dp"
+                app:boxCornerRadiusTopStart="23dp"
+                app:helperText="Please Enter Your Name"
+                app:startIconDrawable="@drawable/ic_baseline_credit_card">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--password-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Emailbox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Namebox"
+                android:layout_marginTop="6dp"
+                android:hint="@string/Email"
+                app:boxCornerRadiusBottomEnd="23dp"
+                app:boxCornerRadiusTopStart="23dp"
+                app:helperText="Please Enter Your Email"
+                app:startIconDrawable="@drawable/ic_baseline_alternate_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Passwordbox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Emailbox"
+                android:layout_marginTop="6dp"
+                android:hint="@string/Password"
+                app:boxCornerRadiusBottomEnd="23dp"
+                app:boxCornerRadiusTopStart="23dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:helperText="Enter Your Paswword"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/ic_baseline_vpn_key">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Passwordbox"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+                <!--forget password-->
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/signupbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white" />
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/cancelbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/signupbtn"
+                    android:layout_marginTop="9dp"
+                    android:backgroundTint="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_cancel"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/backcolor" />
+
+    <TextView
+        android:id="@+id/file"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="serif"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:text="File"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold|italic" />
+    <!-- A CardView that contains a TextView -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="100dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Codersname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:hint="Coder's Name"
+            app:boxCornerRadiusBottomEnd="23dp"
+            app:boxCornerRadiusTopStart="23dp"
+            app:helperText="Please Enter Your Name"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:hint="File Name"
+            app:boxCornerRadiusBottomEnd="23dp"
+            app:boxCornerRadiusTopStart="23dp"
+            app:helperText="Please Enter Your File Name"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Filename"
+            android:layout_marginTop="15dp"
+            android:hint="Enter Your Code Here"
+            app:boxCornerRadiusBottomEnd="23dp"
+            app:boxCornerRadiusTopStart="23dp"
+            app:helperText="Please Enter Your code Here"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="top|left"
+                android:lines="8"
+                android:maxLines="10"
+                android:inputType="textMultiLine"
+                android:minLines="6"
+                android:scrollbars="vertical" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="570dp"
+            android:gravity="center"
+            android:onClick="process"
+            android:text="Upload code"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "359150170752",
+    "firebase_url": "https://newform-6d908-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "newform-6d908",
+    "storage_bucket": "newform-6d908.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359150170752:android:dc3b88b52a485c6793ac65",
+        "android_client_info": {
+          "package_name": "com.example.newproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359150170752-bke2c8i2kg2dsvv5l9k5edeho7l5idci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFyIBJO0sq3-FdSKKr9p3V9uEBZWh-jL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359150170752-bke2c8i2kg2dsvv5l9k5edeho7l5idci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
